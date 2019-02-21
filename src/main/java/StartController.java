@@ -13,7 +13,7 @@ public class StartController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Got a requestt");
-        req.setAttribute("helloMessage", "Hello customer. What can I do for you?");
-        req.getRequestDispatcher("/webapp/WEB-INF/hello.jsp").forward(req, resp);
+        req.setAttribute("helloMessage", "Dit is de site om gegevens op te vragen van een gebruiker");
+        req.getRequestDispatcher("/webapp/WEB-INF/index.jsp").forward(req, resp);
     }
 }

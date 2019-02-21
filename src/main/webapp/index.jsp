@@ -5,7 +5,7 @@
 <h2>${helloMessage}</h2>
 
 <h2>Geef het userid voor om de gebruiker te krijgen.</h2>
-<form method="post" action="${pageContext.request.contextPath}/login">
+<form method="post" action="${pageContext.request.contextPath}/receiverpage.jsp">
     <input type="text" name="personid">
     <input type="submit" value="Login!" />
 </form>
