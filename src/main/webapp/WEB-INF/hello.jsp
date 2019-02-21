@@ -3,10 +3,11 @@
 <body>
 <h2>Hello World!!</h2>
 <h2>${helloMessage}</h2>
-<form action="sample.jsp" method="POST">
-    <input type="text" id="firstname" name="firstname" />
-    <input type="submit" value="Submit" />
-</form>
 
+<h2>Geef het userid voor om de gebruiker te krijgen.</h2>
+<form method="post" action="${pageContext.request.contextPath}/login">
+    <input type="text" name="personid">
+    <input type="submit" value="Login!" />
+</form>
 </body>
 </html>
